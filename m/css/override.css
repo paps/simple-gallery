@@ -1,0 +1,36 @@
+#navigator {
+    margin: 2%;
+    width: 96%;
+    height: 80%;
+    background-color: black;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    border: 1px solid #ccc;
+    background-image: url('../../bg/wild_oliva.png');
+}
+
+#menu {
+    position: fixed;
+    bottom: 0px;
+    margin-top: auto;
+    height: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+#content {
+    text-align: center;
+    margin: 13px;
+}
+
+#caption {
+    border: 1px solid #ccc;
+    background-color: #222;
+    color: #fff;
+    font-style: italic;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+    text-align: center;
+}

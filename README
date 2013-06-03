@@ -34,10 +34,10 @@ To add images & videos, edit 'js/items.js' (ignored by git):
             */
             day: 1
         },
-        { type: 'image', file: 'photo1020.jpg',  caption: 'Hey!', day: 1},
-        { type: 'video', file: 'video1020.ogv', caption: 'Video', day: 1},
-        { type: 'video', file: 'video1030.ogv', caption: 'Bar', day: 2},
-        { type: 'image', file: 'photo1040.jpg',  caption: 'Foo', day: 2},
+        { type: 'image', file: 'photo1020.jpg',  caption: 'Hey!', day: 1 },
+        { type: 'video', file: 'video1020.ogv', caption: 'Video', day: 1 },
+        { type: 'video', file: 'video1030.ogv', caption: 'Bar', day: 2 },
+        { type: 'image', file: 'photo1040.jpg',  caption: 'Foo', day: 2 },
     ];
 
 The order of objects in gItems is important. The array will be used as is for
@@ -56,6 +56,12 @@ You must also edit 'js/settings.js' (ignored by git):
     gSettings = {
         title: 'Your gallery page title',
     };
+
+
+
+
+
+
 
 Useful tips for managing large amount of photos & videos
 --------------------------------------------------------
@@ -94,7 +100,7 @@ Manually rotate photos (ctrl-R to rotate, click 'Save' when exiting):
 Create thumbnails for all JPEG files in directory:
 
     mkdir thumbs
-    for i in `ls *jpg` ; do convert -verbose -scale 100x80 $i thumbs/$i ; done
+    for i in `ls *.jpg` ; do convert -verbose -scale 100x80 $i thumbs/$i ; done
 
 Add 7 hours to Exif time to all JPEG files in directory:
 
@@ -103,4 +109,3 @@ Add 7 hours to Exif time to all JPEG files in directory:
 Set file modification time to Exif time for all JPEG files in directory:
 
     jhead -ft *.jpg
-
