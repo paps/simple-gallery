@@ -55,7 +55,7 @@ You must also edit 'js/settings.js' (ignored by git):
 	};
 
 
-Useful tips for managing large amount of photos & videos
+Useful tips for managing a lot of photos & videos
 --------------------------------------------------------
 
 Some useful packages in Ubuntu:
