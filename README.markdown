@@ -7,6 +7,24 @@ Can be made accessible with any basic HTTP server, for example:
 
 	python -m SimpleHTTPServer (execute in project root directory)
 
+Another example with nginx (faster, better and forbids access to .git):
+
+	server {
+		listen 80;
+		server_name mytrip.domain.com;
+	
+		index index.html;
+		root /home/jon/www/mytrip.domain.com;
+	
+		access_log /home/jon/www-logs/mytrip.domain.com/access.log;
+		error_log /home/jon/www-logs/mytrip.domain.com/error.log;
+	
+		location ~* /.git {
+			deny all;
+			return 404;
+		}
+	}
+
 To add images & videos, edit 'js/items.js' (ignored by git):
 
 	gItems = [
