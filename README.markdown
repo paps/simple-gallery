@@ -82,6 +82,7 @@ Some useful packages in Ubuntu:
 	jhead - manipulate the non-image part of Exif compliant JPEG files
 	ffmpeg - Multimedia player, server, encoder and transcoder
 	imagemagick - image manipulation programs (binaries: mogrify, convert)
+	graphicsmagick - image manipulation programs (better)
 	eog - Eye of GNOME graphics viewer program
 
 Convert all files in directory to 480p ogg video compatible with all major
@@ -92,6 +93,10 @@ browsers HTML5 video:
 Scale down all files in directory to 1000x800 (erases the originals!):
 
 	for i in `ls` ; do mogrify -verbose -scale 1000x800 $i ; done
+
+Scale down and sharpen:
+
+	http://even.li/imagemagick-sharp-web-sized-photographs/
 
 Rotate all JPEG files in directory according to Exif information:
 
