@@ -1,4 +1,4 @@
-# simple-gallery ![project-status](http://stillmaintained.com/paps/simple-gallery.png)#
+# simple-gallery #
 
 How to
 ------
